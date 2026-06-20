@@ -1,3 +1,25 @@
+[project]
+name = "service-watcher"
+version = "0.1.0"
+description = "HTTP service monitoring tool"
+requires-python = ">=3.13"
+
+dependencies = [
+    "httpx>=0.28.0",
+    "pyyaml>=6.0"
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
 [dependency-groups]
 dev = [
     "mypy>=2.1.0",
