@@ -1,0 +1,11 @@
+services:
+  service-watcher:
+    build: .
+    container_name: service-watcher
+
+    volumes:
+      - ./config:/app/config
+      - ./data:/app/data
+      - ./reports:/app/reports
+
+    restart: "no"
