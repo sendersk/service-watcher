@@ -144,6 +144,39 @@ uv run mypy src
 
 ---
 
+## Docker
+
+Build image:
+
+```bash
+docker build -t service-watcher .
+```
+
+Run container:
+
+```bash
+docker run --rm service-watcher
+```
+
+---
+
+## Docker Compose
+
+Run monitoring:
+
+```bash
+docker compose up --build
+```
+
+Generated files:
+
+```text
+data/checks.json
+reports/report.md
+```
+
+---
+
 ## 🧰 Tech Stack
 
 - Python 3.13
